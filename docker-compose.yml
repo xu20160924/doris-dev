@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  env:
+    build: .
+    container_name: doris-dev 
+    # 将docker的22端口转发到本机45678 873端口转发到8730，873用于文件同步
+    ports:
+      - "45678:22"
+      - "8730:873"
+    cap_add:
+      - ALL
