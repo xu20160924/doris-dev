@@ -1,0 +1,32 @@
+deb http://br.archive.ubuntu.com/ubuntu/ focal main restricted
+# deb-src http://br.archive.ubuntu.com/ubuntu/ focal main restricted
+
+deb http://br.archive.ubuntu.com/ubuntu/ focal-updates main restricted
+# deb-src http://br.archive.ubuntu.com/ubuntu/ focal-updates main restricted
+
+deb http://br.archive.ubuntu.com/ubuntu/ focal universe
+# deb-src http://br.archive.ubuntu.com/ubuntu/ focal universe
+deb http://br.archive.ubuntu.com/ubuntu/ focal-updates universe
+# deb-src http://br.archive.ubuntu.com/ubuntu/ focal-updates universe
+
+deb http://br.archive.ubuntu.com/ubuntu/ focal multiverse
+# deb-src http://br.archive.ubuntu.com/ubuntu/ focal multiverse
+deb http://br.archive.ubuntu.com/ubuntu/ focal-updates multiverse
+# deb-src http://br.archive.ubuntu.com/ubuntu/ focal-updates multiverse
+
+deb http://br.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+# deb-src http://br.archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+
+deb http://security.ubuntu.com/ubuntu focal-security main restricted
+# deb-src http://security.ubuntu.com/ubuntu focal-security main restricted
+deb http://security.ubuntu.com/ubuntu focal-security universe
+# deb-src http://security.ubuntu.com/ubuntu focal-security universe
+deb http://security.ubuntu.com/ubuntu focal-security multiverse
+# deb-src http://security.ubuntu.com/ubuntu focal-security multiverse
+
+deb http://ppa.launchpad.net/ubuntu-toolchain-r/ppa/ubuntu focal main
+# deb-src http://ppa.launchpad.net/ubuntu-toolchain-r/ppa/ubuntu focal main
+
+## This repository is because the version of boost installed(1.71) on ubuntu 20.04 is not satisfied require of the Doris, if you want to install boost manually, these lines can be removed.
+deb http://ppa.launchpad.net/mhier/libboost-latest/ubuntu focal main
+# deb-src http://ppa.launchpad.net/mhier/libboost-latest/ubuntu focal mai

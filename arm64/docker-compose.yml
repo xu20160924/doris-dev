@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  env:
+    build: .
+    container_name: doris-dev-arm64
+    # Forward docker port 22 to host 45678 port 873 to 8730,873 for file synchronization
+    ports:
+      - "45678:22"
+      - "8730:873"
+    cap_add:
+      - ALL
